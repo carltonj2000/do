@@ -3,6 +3,7 @@ EXPOSE 80 443
 
 COPY caddy /usr/bin/caddy
 
+RUN apt-get update && apt-get install -y curl
 RUN mkdir -p /mnt/volume-sfo2-01/cj
 COPY Caddyfile /etc/Caddyfile
 
