@@ -1,0 +1,19 @@
+carltonjoseph.com:80,  https://carltonjoseph.com:443 {
+  proxy / phpapache
+  tls self_signed
+}
+
+carltonathome.com:80,  https://carltonathome.com:443 {
+  root /mnt/volume-sfo2-01/cj/carltonathomedotcom/
+  tls self_signed
+}
+
+carltonwin8.com:80,  https://carltonwin8.com:443 {
+  root /mnt/volume-sfo2-01/cj/carltonwin8/
+  tls self_signed
+}
+
+apps4tracking.com:80,  https://apps4tracking.com:443 {
+  root /mnt/volume-sfo2-01/cj/apps4trackingdotcom/
+  tls self_signed
+}
