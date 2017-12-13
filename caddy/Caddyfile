@@ -17,3 +17,9 @@ apps4tracking.com {
   root /mnt/volume-sfo2-01/cj/apps4trackingdotcom/
   tls carltonjoseph@gmail.com
 }
+
+tinaandcarlton.com {
+  root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/
+  tls carltonjoseph@gmail.com
+}
+
