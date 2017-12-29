@@ -21,5 +21,8 @@ apps4tracking.com {
 tinaandcarlton.com {
   root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/
   tls carltonjoseph@gmail.com
+  gzip {
+    not /static
+  }
 }
 
