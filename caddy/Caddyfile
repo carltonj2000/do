@@ -18,6 +18,14 @@ apps4tracking.com {
   tls carltonjoseph@gmail.com
 }
 
+tinaandcarlton.com/weddinginvite {
+  root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite
+  tls carltonjoseph@gmail.com
+  gzip {
+    not /static
+  }
+}
+
 tinaandcarlton.com {
   root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/
   tls carltonjoseph@gmail.com
