@@ -17,3 +17,14 @@ services:
     volumes:
       - /mnt/volume-sfo2-01/cj/carltonjosephdotcom:/var/www/html
     restart: always
+  tinaandcarlton2weddinginvite:
+    build: /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite
+    environment:
+      PORT: 5000
+    restart: always
+  tinaandcarlton3wedding:
+    build: /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/wedding
+    environment:
+      PORT: 5000
+    restart: always
+

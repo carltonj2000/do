@@ -24,5 +24,9 @@ tinaandcarlton.com {
   gzip {
     not /static
   }
+  proxy /weddinginvite tinaandcarlton2weddinginvite:5000 {
+    without /weddinginvite
+  }
+  proxy / tinaandcarlton3wedding:5000
 }
 
