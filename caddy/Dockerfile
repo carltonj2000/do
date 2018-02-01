@@ -1,9 +1,10 @@
-FROM ubuntu:17.04
+FROM ubuntu:16.04
 EXPOSE 80 443
 
 COPY caddy /usr/bin/caddy
 
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update; exit 0
+RUN apt-get install -y curl
 RUN mkdir -p /mnt/volume-sfo2-01/cj
 COPY Caddyfile /etc/Caddyfile
 
