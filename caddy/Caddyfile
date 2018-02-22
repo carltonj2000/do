@@ -13,14 +13,14 @@ carltonwin8.com {
   tls carltonjoseph@gmail.com
 }
 
-apps4tracking.com, www.apps4tracking.com {
-  root /mnt/volume-sfo2-01/cj/apps4trackingdotcom/
+appsfortracking.com {
   tls carltonjoseph@gmail.com
+  proxy / apps4tracking:5000
 }
 
-cheryl.apps4tracking.com {
-  root /mnt/volume-sfo2-01/cj/apps4trackingdotcomcheryl/
+apps4tracking.com {
   tls carltonjoseph@gmail.com
+  proxy / apps4tracking:5000
 }
 
 tinaandcarlton.com {

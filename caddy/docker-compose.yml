@@ -27,4 +27,11 @@ services:
     environment:
       PORT: 5000
     restart: always
+  apps4tracking:
+    build: ../apps4tracking/server
+    environment:
+      PORT: 5000
+    volumes:
+      - /mnt/volume-sfo2-01/cj/apps4trackingdotcom:/usr/src/app
+    restart: always
 
