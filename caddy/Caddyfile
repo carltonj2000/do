@@ -32,6 +32,9 @@ tinaandcarlton.com {
   proxy /weddinginvite tinaandcarlton2weddinginvite:5000 {
     without /weddinginvite
   }
+  proxy /honeymoon tinaandcarlton4honeymoon:5000 {
+    without /honeymoon
+  }
   proxy / tinaandcarlton3wedding:5000
 }
 

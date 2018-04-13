@@ -27,6 +27,13 @@ services:
     environment:
       PORT: 5000
     restart: always
+  tinaandcarlton4honeymoon:
+    build: ../tinaandcarltondotcom/honeymoon
+    environment:
+      PORT: 5000
+    volumes:
+      - /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/honeymoon:/usr/src/app
+    restart: always
   apps4tracking:
     build: ../apps4tracking/server
     environment:
