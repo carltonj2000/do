@@ -26,6 +26,8 @@ services:
     build: ../tinaandcarltondotcom/wedding
     environment:
       PORT: 5000
+    volumes:
+      - /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/wedding:/usr/src/app
     restart: always
   tinaandcarlton4honeymoon:
     build: ../tinaandcarltondotcom/honeymoon
