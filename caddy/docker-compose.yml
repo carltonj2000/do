@@ -7,20 +7,22 @@ services:
       - "443:443"
     volumes:
       - /mnt/volume-sfo2-01/cj:/mnt/volume-sfo2-01/cj
-    depends_on:
-      - phpapache
+#    depends_on:
+#      - phpapache
     restart: always
-  phpapache:
-    build: ../phpapache
-    expose:
-      - "80"
-    volumes:
-      - /mnt/volume-sfo2-01/cj/carltonjosephdotcom:/var/www/html
-    restart: always
+#  phpapache:
+#    build: ../phpapache
+#    expose:
+#      - "80"
+#    volumes:
+#      - /mnt/volume-sfo2-01/cj/carltonjosephdotcom:/var/www/html
+#    restart: always
   tinaandcarlton2weddinginvite:
     build: ../tinaandcarltondotcom/weddinginvite
     environment:
       PORT: 5000
+    volumes:
+      - /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite:/usr/src/app
     restart: always
   tinaandcarlton3wedding:
     build: ../tinaandcarltondotcom/wedding

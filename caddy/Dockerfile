@@ -11,4 +11,4 @@ COPY Caddyfile /etc/Caddyfile
 WORKDIR /html
 
 ENTRYPOINT ["/usr/bin/caddy"]
-CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]
+CMD ["-agree", "--conf", "/etc/Caddyfile", "--log", "stdout"]

@@ -1,31 +1,43 @@
 carltonjoseph.com {
-  proxy / phpapache
+#carltonjoseph.com:80 {
+#  tls off
   tls carltonjoseph@gmail.com
-}
-
-carltonathome.com {
   root /mnt/volume-sfo2-01/cj/carltonathomedotcom/
-  tls carltonjoseph@gmail.com
 }
 
-carltonwin8.com {
-  root /mnt/volume-sfo2-01/cj/carltonwin8/
-  tls carltonjoseph@gmail.com
-}
+#carltonathome.com {
+#carltonathome.com:80 {
+#  tls off
+#  tls carltonjoseph@gmail.com
+#  proxy / phpapache
+#}
+
+#carltonwin8.com {
+#carltonwin8.com:80 {
+#  tls off
+#  tls carltonjoseph@gmail.com
+#  root /mnt/volume-sfo2-01/cj/carltonwin8/
+#}
 
 appsfortracking.com {
+#appsfortracking.com:80 {
+#  tls off
   tls carltonjoseph@gmail.com
   proxy / apps4tracking:5000
 }
 
 apps4tracking.com {
+#apps4tracking.com:80 {
+#  tls off
   tls carltonjoseph@gmail.com
   proxy / apps4tracking:5000
 }
 
 tinaandcarlton.com {
-  root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/
+#tinaandcarlton.com:80 {
+#  tls off
   tls carltonjoseph@gmail.com
+  root /mnt/volume-sfo2-01/cj/tinaandcarltondotcom/
   gzip {
     not /static
   }
